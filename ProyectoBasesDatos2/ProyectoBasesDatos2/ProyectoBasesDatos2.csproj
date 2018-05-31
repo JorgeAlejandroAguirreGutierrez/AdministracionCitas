@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CDF6C757-4811-4B0C-86BC-EB9B87207AA9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProyectoBasesDatos2</RootNamespace>
+    <AssemblyName>ProyectoBasesDatos2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\oraclexe\odp.net\managed\common\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="vistas\AdmCopagos.aspx" />
+    <Content Include="vistas\AdmEspecialidad.aspx" />
+    <Content Include="vistas\AdmMultas.aspx" />
+    <Content Include="vistas\AdmPagoCopagos.aspx" />
+    <Content Include="vistas\AdmPagoMultas.aspx" />
+    <Content Include="vistas\AdmPrincipal.aspx" />
+    <Content Include="vistas\AdmRegistrarMulta.aspx" />
+    <Content Include="vistas\AdmRegistrarPagoCopago.aspx" />
+    <Content Include="vistas\AdmRegistrarPagoMulta.aspx" />
+    <Content Include="vistas\AfiliadoCita.aspx" />
+    <Content Include="vistas\AfiliadoCopagos.aspx" />
+    <Content Include="vistas\AfiliadoPrincipal.aspx" />
+    <Content Include="vistas\AfiliadoProgramacion.aspx" />
+    <Content Include="vistas\AfiliadoRegistrarCita.aspx" />
+    <Content Include="vistas\css\bootstrap.min.css" />
+    <Content Include="vistas\css\carousel.css" />
+    <Content Include="vistas\css\dashboard.css" />
+    <Content Include="vistas\css\ie10-viewport-bug-workaround.css" />
+    <Content Include="vistas\AdmEliminarUsuario.aspx" />
+    <Content Include="vistas\images\imagen1.jpg" />
+    <Content Include="vistas\images\imagen2.jpg" />
+    <Content Include="vistas\images\imagen3.jpg" />
+    <Content Include="vistas\images\imagen4.jpg" />
+    <Content Include="vistas\images\imagen5.jpg" />
+    <Content Include="vistas\images\imagen6.jpg" />
+    <Content Include="vistas\js\bootstrap.min.js" />
+    <Content Include="vistas\js\holder.min.js" />
+    <Content Include="vistas\js\ie-emulation-modes-warning.js" />
+    <Content Include="vistas\js\ie10-viewport-bug-workaround.js" />
+    <Content Include="vistas\js\jquery.min.js" />
+    <Content Include="vistas\AdmModificarUsuario.aspx" />
+    <Content Include="vistas\AdmRegistrarUsuario.aspx" />
+    <Content Include="vistas\MedicoCitas.aspx" />
+    <Content Include="vistas\MedicoPrincipal.aspx" />
+    <Content Include="vistas\MedicoRegistrarAgenda.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controladoras\Controladora.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="modelos\Agenda.cs" />
+    <Compile Include="modelos\Atencion.cs" />
+    <Compile Include="modelos\Categoria.cs" />
+    <Compile Include="modelos\Cita.cs" />
+    <Compile Include="modelos\CitaUser.cs" />
+    <Compile Include="modelos\Coneccion.cs" />
+    <Compile Include="modelos\Consulta.cs" />
+    <Compile Include="modelos\Copago.cs" />
+    <Compile Include="modelos\Curso.cs" />
+    <Compile Include="modelos\Especialidad.cs" />
+    <Compile Include="modelos\IniciarSesion.cs" />
+    <Compile Include="modelos\Multa.cs" />
+    <Compile Include="modelos\Noticia.cs" />
+    <Compile Include="modelos\PagoCopago.cs" />
+    <Compile Include="modelos\PagoMulta.cs" />
+    <Compile Include="modelos\Programacion.cs" />
+    <Compile Include="modelos\Rol.cs" />
+    <Compile Include="modelos\Usuario.cs" />
+    <Compile Include="modelos\UsuarioUser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vistas\AdmCopagos.aspx.cs">
+      <DependentUpon>AdmCopagos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AdmCopagos.aspx.designer.cs">
+      <DependentUpon>AdmCopagos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AdmEspecialidad.aspx.cs">
+      <DependentUpon>AdmEspecialidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AdmEspecialidad.aspx.designer.cs">
+      <DependentUpon>AdmEspecialidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AdmMultas.aspx.cs">
+      <DependentUpon>AdmMultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AdmMultas.aspx.designer.cs">
+      <DependentUpon>AdmMultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AdmPagoCopagos.aspx.cs">
+      <DependentUpon>AdmPagoCopagos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AdmPagoCopagos.aspx.designer.cs">
+      <DependentUpon>AdmPagoCopagos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AdmPagoMultas.aspx.cs">
+      <DependentUpon>AdmPagoMultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AdmPagoMultas.aspx.designer.cs">
+      <DependentUpon>AdmPagoMultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AdmPrincipal.aspx.cs">
+      <DependentUpon>AdmPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AdmPrincipal.aspx.designer.cs">
+      <DependentUpon>AdmPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AdmModificarUsuario.aspx.cs">
+      <DependentUpon>AdmModificarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AdmModificarUsuario.aspx.designer.cs">
+      <DependentUpon>AdmModificarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AdmRegistrarPagoCopago.aspx.cs">
+      <DependentUpon>AdmRegistrarPagoCopago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AdmRegistrarPagoCopago.aspx.designer.cs">
+      <DependentUpon>AdmRegistrarPagoCopago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AdmRegistrarPagoMulta.aspx.cs">
+      <DependentUpon>AdmRegistrarPagoMulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AdmRegistrarPagoMulta.aspx.designer.cs">
+      <DependentUpon>AdmRegistrarPagoMulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AdmRegistrarUsuario.aspx.cs">
+      <DependentUpon>AdmRegistrarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AdmRegistrarUsuario.aspx.designer.cs">
+      <DependentUpon>AdmRegistrarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AdmRegistrarMulta.aspx.cs">
+      <DependentUpon>AdmRegistrarMulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AdmRegistrarMulta.aspx.designer.cs">
+      <DependentUpon>AdmRegistrarMulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AfiliadoCita.aspx.cs">
+      <DependentUpon>AfiliadoCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AfiliadoCita.aspx.designer.cs">
+      <DependentUpon>AfiliadoCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AfiliadoCopagos.aspx.cs">
+      <DependentUpon>AfiliadoCopagos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AfiliadoCopagos.aspx.designer.cs">
+      <DependentUpon>AfiliadoCopagos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AfiliadoPrincipal.aspx.cs">
+      <DependentUpon>AfiliadoPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AfiliadoPrincipal.aspx.designer.cs">
+      <DependentUpon>AfiliadoPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AdmEliminarUsuario.aspx.cs">
+      <DependentUpon>AdmEliminarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AdmEliminarUsuario.aspx.designer.cs">
+      <DependentUpon>AdmEliminarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AfiliadoProgramacion.aspx.cs">
+      <DependentUpon>AfiliadoProgramacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AfiliadoProgramacion.aspx.designer.cs">
+      <DependentUpon>AfiliadoProgramacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AfiliadoRegistrarCita.aspx.cs">
+      <DependentUpon>AfiliadoRegistrarCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\AfiliadoRegistrarCita.aspx.designer.cs">
+      <DependentUpon>AfiliadoRegistrarCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\MedicoCitas.aspx.cs">
+      <DependentUpon>MedicoCitas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\MedicoCitas.aspx.designer.cs">
+      <DependentUpon>MedicoCitas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\MedicoPrincipal.aspx.cs">
+      <DependentUpon>MedicoPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\MedicoPrincipal.aspx.designer.cs">
+      <DependentUpon>MedicoPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\MedicoRegistrarAgenda.aspx.cs">
+      <DependentUpon>MedicoRegistrarAgenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\MedicoRegistrarAgenda.aspx.designer.cs">
+      <DependentUpon>MedicoRegistrarAgenda.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>15959</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:15625/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

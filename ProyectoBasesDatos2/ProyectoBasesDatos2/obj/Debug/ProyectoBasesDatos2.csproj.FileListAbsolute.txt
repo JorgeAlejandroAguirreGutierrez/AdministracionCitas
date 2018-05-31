@@ -1,0 +1,6 @@
+C:\Users\Jorge Alejandro\Documents\Visual Studio 2013\Projects\ProyectoBasesDatos2\ProyectoBasesDatos2\bin\ProyectoBasesDatos2.dll.config
+C:\Users\Jorge Alejandro\Documents\Visual Studio 2013\Projects\ProyectoBasesDatos2\ProyectoBasesDatos2\bin\ProyectoBasesDatos2.dll
+C:\Users\Jorge Alejandro\Documents\Visual Studio 2013\Projects\ProyectoBasesDatos2\ProyectoBasesDatos2\bin\ProyectoBasesDatos2.pdb
+C:\Users\Jorge Alejandro\Documents\Visual Studio 2013\Projects\ProyectoBasesDatos2\ProyectoBasesDatos2\obj\Debug\ProyectoBasesDatos2.csprojResolveAssemblyReference.cache
+C:\Users\Jorge Alejandro\Documents\Visual Studio 2013\Projects\ProyectoBasesDatos2\ProyectoBasesDatos2\obj\Debug\ProyectoBasesDatos2.dll
+C:\Users\Jorge Alejandro\Documents\Visual Studio 2013\Projects\ProyectoBasesDatos2\ProyectoBasesDatos2\obj\Debug\ProyectoBasesDatos2.pdb
